@@ -9,7 +9,7 @@ function Heading2() {
     "Salam",
     "Hej",
     "Hola!",
-    "Din Mamma",
+    "Sat Sri Akal",
     "Bonjour!"
   ];
   
@@ -21,14 +21,11 @@ function Heading2() {
   return (
   <div className='tracking-wider font-mono text-white text-9xl text-center'> 
       <TypeWriter
-      
         options={{
-          loop: true,
-
+          loop: true
         }}
-        onAnimationEnd = {() => console.log("Finished") }
         onInit={(typewriter) => {
-          typewriter.pauseFor(100).typeString(greetingTitles[0]).start().deleteAll(100)
+          typewriter.pauseFor(100).typeString("Salam").start().deleteAll(100)
           
         }}
       />
