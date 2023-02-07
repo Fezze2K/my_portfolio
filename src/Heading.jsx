@@ -16,7 +16,7 @@ function Heading() {
   const randomized = myArray.sort((a,b) => 0.5 - Math.random())
   
   return (
-  <div className='tracking-wider font-mono text-white text-9xl text-center'> 
+  <div className='tracking-tight hover:tracking-widest font-mono text-white text-9xl text-center'> 
       <TypeWriter 
         options={{ 
           loop: true,
@@ -25,11 +25,6 @@ function Heading() {
           strings: randomized
 
         }}
-        // onInit={
-        //   (typewriter) => {
-        //     typewriter.typeString(`Hey, I'm Faizan. I am ${role}`).pauseFor(pauseFor).start().pauseFor(pauseFor).deleteAll().callFunction(() => setNewRole())
-        //   }
-        // }
       />
   </div>
   );
